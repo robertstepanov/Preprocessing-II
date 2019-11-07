@@ -1,1 +1,22 @@
 // Mixins in here
+
+.flex (@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.border () {
+    border-bottom: 2px dashed @silver;
+}
+
+.button (@bg-color, @color, @radius) {
+    background: @bg-color;
+    color: @color;
+    border-radius: @radius;
+    padding: 5% 1%;
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    
+}
