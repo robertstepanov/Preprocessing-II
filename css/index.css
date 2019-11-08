@@ -202,7 +202,7 @@ img {
   text-decoration: none;
   color: #212529;
   font-size: 2rem;
-  padding-right: 2%;
+  padding-right: 4%;
 }
 @media (max-width: 500px) {
   .nav-wrapper .nav a {
@@ -279,6 +279,11 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    border-radius: 30px;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section {

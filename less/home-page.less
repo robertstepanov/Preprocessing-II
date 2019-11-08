@@ -1,14 +1,8 @@
 .home {
-
   .animation {
-	
-    .keyframes(fade-in;{
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-      });
-  
-    .animation(fade-in 0.2s linear infinite alternate)
-  
+    .keyframes(fade-in;{0% {opacity: 0;} 100% {opacity: 1;}});
+
+    .animation(fade-in 0.2s linear infinite alternate);
   }
 
   .hero {
@@ -21,7 +15,8 @@
     }
 
     @media @phone {
-      h2, p {
+      h2,
+      p {
         padding: 3%;
       }
     }
@@ -32,26 +27,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-  .text-content {
+
+    .text-content {
       width: 48%;
       padding-right: 1%;
-  }
+    }
 
-  .img-content {
+    .img-content {
       width: 48%;
       padding-left: 1%;
 
-    img {
+      img {
         border-radius: 10px;
+
+        @media @phone {
+          border-radius: 30px;
+        }
       }
     }
 
     @media @phone {
-
       flex-direction: column;
-      
-      .img-content, img, .content-section, .inverse-content, .text-content {
+
+      .img-content,
+      img,
+      .content-section,
+      .inverse-content,
+      .text-content {
         width: 100%;
         padding: 3%;
         margin: auto;
@@ -66,7 +68,8 @@
     @media @phone {
       flex-direction: column-reverse;
 
-      .text-content h2, p {
+      .text-content h2,
+      p {
         padding: 0 3%;
       }
     }
@@ -112,7 +115,6 @@
 
     .btn {
       .button(@eastern-blue, #fff, 12px);
-      
     }
 
     @media @phone {
@@ -131,4 +133,4 @@
       }
     }
   }
-}// home
+} // home
