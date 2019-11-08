@@ -1,5 +1,16 @@
 .home {
 
+  .animation {
+	
+    .keyframes(fade-in;{
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+      });
+  
+    .animation(fade-in 0.2s linear infinite alternate)
+  
+  }
+
   .hero {
     margin: 0 auto;
     .border();
@@ -7,6 +18,12 @@
 
     img {
       margin: 0 auto 4%;
+    }
+
+    @media @phone {
+      h2, p {
+        padding: 3%;
+      }
     }
   }
 
@@ -29,11 +46,30 @@
         border-radius: 10px;
       }
     }
+
+    @media @phone {
+
+      flex-direction: column;
+      
+      .img-content, img, .content-section, .inverse-content, .text-content {
+        width: 100%;
+        padding: 3%;
+        margin: auto;
+      }
+    }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+
+      .text-content h2, p {
+        padding: 0 3%;
+      }
+    }
 
     .text-content {
       padding-left: 1%;
@@ -43,6 +79,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        padding: 0 3%;
+      }
     }
   }
 
@@ -52,6 +92,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @phone {
+      width: 90%;
     }
   }
 
@@ -69,6 +113,22 @@
     .btn {
       .button(@eastern-blue, #fff, 12px);
       
+    }
+
+    @media @phone {
+      flex-direction: column;
+
+      .destination {
+        width: 90%;
+        margin: 0 auto 3%;
+        padding: 3%;
+      }
+
+      .btn {
+        width: 95%;
+        margin: auto;
+        padding: 3% 2%;
+      }
     }
   }
 }// home
